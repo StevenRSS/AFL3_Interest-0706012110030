@@ -41,6 +41,7 @@
 		049C774C29FB3BCD003BD829 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C774B29FB3BCD003BD829 /* ProfileHost.swift */; };
 		049C774E29FB3BEB003BD829 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C774D29FB3BEB003BD829 /* ProfileSummary.swift */; };
 		049C775029FB3C33003BD829 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C774F29FB3C33003BD829 /* HikeBadge.swift */; };
+		049C775229FB3D4E003BD829 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C775129FB3D4E003BD829 /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		049C774B29FB3BCD003BD829 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		049C774D29FB3BEB003BD829 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		049C774F29FB3C33003BD829 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		049C775129FB3D4E003BD829 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 				049C774529FB3A1D003BD829 /* CategoryItem.swift */,
 				049C774B29FB3BCD003BD829 /* ProfileHost.swift */,
 				049C774D29FB3BEB003BD829 /* ProfileSummary.swift */,
+				049C775129FB3D4E003BD829 /* ProfileEditor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				049C772929FB08D7003BD829 /* BadgeSymbol.swift in Sources */,
 				049C771D29FABBA2003BD829 /* LandmarkList.swift in Sources */,
 				049C771F29FABC8F003BD829 /* LandmarkDetail.swift in Sources */,
+				049C775229FB3D4E003BD829 /* ProfileEditor.swift in Sources */,
 				049C772729FB080D003BD829 /* BadgeBackground.swift in Sources */,
 				049C773D29FB0B46003BD829 /* HikeDetail.swift in Sources */,
 				049C770E29FAB4E5003BD829 /* CircleImage.swift in Sources */,
