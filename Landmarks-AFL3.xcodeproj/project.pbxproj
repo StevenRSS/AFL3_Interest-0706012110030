@@ -34,6 +34,7 @@
 		049C773D29FB0B46003BD829 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C773929FB0B46003BD829 /* HikeDetail.swift */; };
 		049C773E29FB0B46003BD829 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C773A29FB0B46003BD829 /* HikeView.swift */; };
 		049C774029FB0C40003BD829 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C773F29FB0C40003BD829 /* ContentView.swift */; };
+		049C774229FB3857003BD829 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049C774129FB3857003BD829 /* CategoryHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		049C773929FB0B46003BD829 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
 		049C773A29FB0B46003BD829 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		049C773F29FB0C40003BD829 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		049C774129FB3857003BD829 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				049C773629FB0B46003BD829 /* Hikes */,
+				049C774129FB3857003BD829 /* CategoryHome.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049C772D29FB0A2F003BD829 /* Badge.swift in Sources */,
+				049C774229FB3857003BD829 /* CategoryHome.swift in Sources */,
 				049C771029FAB57D003BD829 /* MapView.swift in Sources */,
 				049C76E429FAB201003BD829 /* Landmarks_AFL3App.swift in Sources */,
 				049C772129FAE7E1003BD829 /* FavoriteButton.swift in Sources */,
