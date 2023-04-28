@@ -15,7 +15,7 @@ public struct LandmarkDetail: View {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
 
-    var body: some View {
+    public var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
