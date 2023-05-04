@@ -10,6 +10,7 @@ import Combine
 
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    @Published var agents: [Agent] = load("agentsData.json")
     var hikes: [Hike] = load("hikeData.json")
     @Published var profile = Profile.default
 
@@ -21,6 +22,17 @@ final class ModelData: ObservableObject {
         Dictionary(
             grouping: landmarks,
             by: { $0.category.rawValue }
+        )
+    }
+    
+    var featuresAgent: [Agent] {
+        agents.filter { $0.isFeatured }
+    }
+
+    var categoriesAgent: [String: [Agent]] {
+        Dictionary(
+            grouping: agents,
+            by: { $0.role.rawValue }
         )
     }
 }

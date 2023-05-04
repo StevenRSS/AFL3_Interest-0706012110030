@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct FeatureCard: View {
-    var landmark: Landmark
+    var agent: Agent
 
     var body: some View {
-        landmark.featureImage?
+        agent.featureImage?
             .resizable()
             .aspectRatio(3 / 2, contentMode: .fit)
             .overlay {
-                TextOverlay(landmark: landmark)
+                TextOverlay(agent: agent)
             }
     }
 }
 
 struct TextOverlay: View {
-    var landmark: Landmark
+    var agent: Agent
 
     var gradient: LinearGradient {
         .linearGradient(
@@ -34,10 +34,10 @@ struct TextOverlay: View {
         ZStack(alignment: .bottomLeading) {
             gradient
             VStack(alignment: .leading) {
-                Text(landmark.name)
+                Text(agent.name)
                     .font(.title)
                     .bold()
-                Text(landmark.park)
+                Text(agent.roles)
             }
             .padding()
         }
@@ -47,6 +47,6 @@ struct TextOverlay: View {
 
 struct FeatureCard_Previews: PreviewProvider {
     static var previews: some View {
-        FeatureCard(landmark: ModelData().features[0])
+        FeatureCard(agent: ModelData().featuresAgent[0])
     }
 }

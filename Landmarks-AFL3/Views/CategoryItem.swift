@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct CategoryItem: View {
-    var landmark: Landmark
+    var agent: Agent
 
     var body: some View {
         VStack(alignment: .leading) {
-            landmark.image
+            agent.image
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
-            Text(landmark.name)
+            Text(agent.name)
                 .foregroundColor(.primary)
                 .font(.caption)
         }
@@ -27,6 +27,6 @@ struct CategoryItem: View {
 
 struct CategoryItem_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItem(landmark: ModelData().landmarks[0])
+        CategoryItem(agent: ModelData().agents[0])
     }
 }

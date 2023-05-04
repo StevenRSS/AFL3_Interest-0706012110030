@@ -17,10 +17,9 @@ public struct LandmarkDetail: View {
 
     public var body: some View {
         ScrollView {
-            MapView(coordinate: landmark.locationCoordinate)
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
-
+            landmark.image
+                .resizable()
+                .cornerRadius(5)
             CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)

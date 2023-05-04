@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryRow: View {
     var categoryName: String
-    var items: [Landmark]
+    var items: [Agent]
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,11 +20,11 @@ struct CategoryRow: View {
 
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    ForEach(items) { landmark in
+                    ForEach(items) { agent in
                         NavigationLink {
-                            LandmarkDetail(landmark: landmark)
+                            AgentDetail(agent: agent)
                         } label: {
-                            CategoryItem(landmark: landmark)
+                            CategoryItem(agent: agent)
                         }
                     }
                 }
@@ -35,12 +35,12 @@ struct CategoryRow: View {
 }
 
 struct CategoryRow_Previews: PreviewProvider {
-    static var landmarks = ModelData().landmarks
+    static var agents = ModelData().agents
 
     static var previews: some View {
         CategoryRow(
-            categoryName: landmarks[0].category.rawValue,
-            items: Array(landmarks.prefix(4))
+            categoryName: agents[0].role.rawValue,
+            items: Array(agents.prefix(4))
         )
     }
 }
